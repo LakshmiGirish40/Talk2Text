@@ -61,16 +61,16 @@ with stylable_container(
     "green",
     css_styles="""
     button {
-        background-color: #00FF00;
+        background-color:#B7ACAC;
         color: black;
     }""",
 ):
     button1_clicked = st.button("Button 1", key="button1")
 with stylable_container(
-    "red",
+    "blue",
     css_styles="""
     button {
-        background-color: #FF0000;
+        background-color:#B7ACAC;
     }""",
 ):
     button2_clicked = st.button("Button 2", key="button2")
