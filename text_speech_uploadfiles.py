@@ -45,7 +45,7 @@ st.markdown(
     <style>
     /* Background color for the app */
     .stApp {
-        background-color: #ABB4EA;
+        background-color:#EAF1E8;
     }
     /* Change the color of titles */
     h1 {
