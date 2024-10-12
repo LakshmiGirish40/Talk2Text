@@ -40,5 +40,13 @@ if st.button("Convert uploaded file to Speech"):
     else:
         st.warning("The text not found")
 
+st.markdown("""
+    <style>
+        [data-testid="column"]:nth-child(2){
+            background-color: lightgrey;
+        }
+    </style>
+    """, unsafe_allow_html=True
+)
 
 #run - streamlit run text_speech_uploadfiles.py
