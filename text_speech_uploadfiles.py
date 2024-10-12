@@ -8,7 +8,18 @@ st.title("Text2Talk Converting Application")
 
 # Text input
 text = st.text_area("Enter your text to convert text  to speech")
-
+# Button to trigger TTS
+if st.button("Convert to Speech"):
+    if text:
+        # Convert text to speech
+        tts = gTTS(text)        
+        audio_stream = BytesIO()
+        tts.write_to_fp(audio_stream)
+        st.audio(audio_stream)
+        
+    else:
+        st.warning("The text not found")
+        
 uploaded_file = st.file_uploader("Choose a file")
 
 if uploaded_file is not None:
@@ -29,16 +40,5 @@ if st.button("Convert uploaded file to Speech"):
     else:
         st.warning("The text not found")
 
-# Button to trigger TTS
-if st.button("Convert to Speech"):
-    if text:
-        # Convert text to speech
-        tts = gTTS(text)        
-        audio_stream = BytesIO()
-        tts.write_to_fp(audio_stream)
-        st.audio(audio_stream)
-        
-    else:
-        st.warning("The text not found")
-        
+
 #run - streamlit run text_speech_uploadfiles.py
