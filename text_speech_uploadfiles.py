@@ -15,8 +15,7 @@ if st.button("Convert to Speech"):
         tts = gTTS(text)        
         audio_stream = BytesIO()
         tts.write_to_fp(audio_stream)
-        st.audio(audio_stream)
-        
+        st.audio(audio_stream)     
     else:
         st.warning("The text not found")
         
@@ -35,8 +34,7 @@ if st.button("Convert uploaded file to Speech"):
         tts = gTTS(file_text )        
         audio_stream2 = BytesIO()
         tts.write_to_fp(audio_stream2)
-        st.audio(audio_stream2)
-          
+        st.audio(audio_stream2)         
     else:
         st.warning("The text not found")
 
@@ -70,7 +68,7 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True)
-# Using st.container
+
 
 
 
