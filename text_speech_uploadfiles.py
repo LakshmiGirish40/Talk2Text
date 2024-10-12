@@ -36,6 +36,8 @@ if st.button("Convert uploaded file to Speech"):
         audio_stream2 = BytesIO()
         tts.write_to_fp(audio_stream2)
         st.audio(audio_stream2)
+        with st.container():
+    st.markdown("<div class='custom-container'>Converted text2talk!</div>", unsafe_allow_html=True)
         
     else:
         st.warning("The text not found")
@@ -45,7 +47,7 @@ st.markdown(
     <style>
     /* Background color for the app */
     .stApp {
-        background-color:#EAF1E8;
+        background-color:#395039;
     }
     /* Change the color of titles */
     h1 {
@@ -70,8 +72,7 @@ st.markdown(
     """,
     unsafe_allow_html=True)
 # Using st.container
-with st.container():
-    st.markdown("<div class='custom-container'>Converted text2talk!</div>", unsafe_allow_html=True)
+
 
 
 
