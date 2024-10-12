@@ -43,7 +43,7 @@ if st.button("Convert uploaded file to Speech"):
 st.markdown("""
     <style>
         [data-testid="column"]:nth-child(2){
-            background-color: lightgrey;
+            background-color: #D5ABD6;
         }
     </style>
     """, unsafe_allow_html=True
