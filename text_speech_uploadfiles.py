@@ -1,0 +1,44 @@
+import streamlit as st
+from gtts import gTTS
+from io import BytesIO
+import os
+
+# Streamlit app title
+st.title("Text_to_Speech Converting Application")
+
+# Text input
+text = st.text_area("Enter your text to convert text  to speech")
+
+uploaded_file = st.file_uploader("Choose a file")
+
+if uploaded_file is not None:
+    # Read and decode the file
+    file_text = uploaded_file.read().decode(encoding="utf-8")
+    st.subheader( "Uploaded file text_speech_conversion",divider="gray")
+    st.text(file_text)
+    st.text_area("File Contents", file_text, height=300)
+    
+if st.button("Convert uploaded file to Speech"):
+    if file_text :
+        # Convert text to speech
+        tts = gTTS(file_text )        
+        audio_stream2 = BytesIO()
+        tts.write_to_fp(audio_stream2)
+        st.audio(audio_stream2)
+        
+    else:
+        st.warning("The text not found")
+
+# Button to trigger TTS
+if st.button("Convert to Speech"):
+    if text:
+        # Convert text to speech
+        tts = gTTS(text)        
+        audio_stream = BytesIO()
+        tts.write_to_fp(audio_stream)
+        st.audio(audio_stream)
+        
+    else:
+        st.warning("The text not found")
+        
+#run - streamlit run text_speech_uploadfiles.py

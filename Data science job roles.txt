@@ -1,0 +1,17 @@
+Data science job roles
+Data science teams are responsible for solving complex problems with the help of - you guessed it - data. Even though, for the most part, roles under the data science umbrella require data to work with, the necessary skills and tools can vary considerably.
+
+This is an exhaustive list of the top 10 data science roles that are diverse and require a varied skill set. Go through them to understand what role fits best for you, but keep in mind that these data science job titles are not fixed and can vary depending upon the company and industry.
+
+Now without any further ado, let's have a look at the list of data science roles -
+
+Data Scientist
+Data Analyst
+Data Engineers
+Data Administrator
+Machine Learning Engineer
+Data Architect
+Statistician
+Business Analyst
+Data and Analytics Manager
+Technology specialized roles
