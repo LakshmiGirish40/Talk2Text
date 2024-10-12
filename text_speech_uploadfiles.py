@@ -69,6 +69,9 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True)
+# Using st.container
+with st.container():
+    st.markdown("<div class='custom-container'>Hello, Streamlit!</div>", unsafe_allow_html=True)
 
 
 
