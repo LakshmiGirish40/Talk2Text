@@ -40,13 +40,20 @@ if st.button("Convert uploaded file to Speech"):
     else:
         st.warning("The text not found")
 
-st.markdown("""
+st.markdown(
+    """
     <style>
-        [data-testid="column"]:nth-child(2){
-            background-color: #D5ABD6;
-        }
+    /* Background color for the app */
+    .stApp {
+        background-color: #f5f5f5;
+    }
+    /* Change the color of titles */
+    h1 {
+        color: #FF6347;
+    }
     </style>
-    """, unsafe_allow_html=True
-)
+    """,
+    unsafe_allow_html=True
+
 
 #run - streamlit run text_speech_uploadfiles.py
