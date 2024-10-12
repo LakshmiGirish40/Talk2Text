@@ -39,8 +39,7 @@ if st.button("Convert uploaded file to Speech"):
           
     else:
         st.warning("The text not found")
-    with st.container():
-        st.markdown("<div class='custom-container'>Converted text2talk!</div>", unsafe_allow_html=True)
+
 
 st.markdown(
     """
