@@ -4,7 +4,7 @@ from io import BytesIO
 import os
 
 # Streamlit app title
-st.title("Text_to_Speech Converting Application")
+st.title("Text2Tallk Converting Application")
 
 # Text input
 text = st.text_area("Enter your text to convert text  to speech")
