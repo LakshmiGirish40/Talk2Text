@@ -57,23 +57,19 @@ st.markdown(
     """,
     unsafe_allow_html=True)
 
-with stylable_container(
-    "green",
-    css_styles="""
-    button {
-        background-color:#B7ACAC;
-        color: black;
-    }""",
-):
-    button1_clicked = st.button("Button 1", key="button1")
-with stylable_container(
-    "blue",
-    css_styles="""
-    button {
-        background-color:#B7ACAC;
-    }""",
-):
-    button2_clicked = st.button("Button 2", key="button2")
+# Custom CSS for styling
+st.markdown(
+    """
+    <style>
+    .custom-container {
+        background-color: #D5ABD6;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+
 
 
 #run - streamlit run text_speech_uploadfiles.py
