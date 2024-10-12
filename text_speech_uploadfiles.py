@@ -49,8 +49,10 @@ st.markdown(
     }
     /* Change the color of titles */
     h1 {
-        color: #FF6347;
+        color:#FFFFFF;
+        font-family: '{Monospace}';
     }
+
     </style>
     """,
     unsafe_allow_html=True)
